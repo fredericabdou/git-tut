@@ -24,6 +24,10 @@ ls -la
 ```
 git status 
 ```
+5. Before adding files to the staging environment, you can discard any changes made to these files beforehand
+```
+git checkout --<file> 
+```
 
 ## Add files to the staging environment to store the state of files
 1. You can add one file to the staging environment
@@ -63,5 +67,6 @@ git commit -m "revision one"
 git log
 ```
 
-dasdasd
+
+
 
