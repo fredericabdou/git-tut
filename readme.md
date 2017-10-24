@@ -143,6 +143,10 @@ git branch
 ``` 
 git checkout <branch-name>
 ```
-hole l recently added lal branch master 
+4. Merging branches
 
+The following code will merge an external branch to the branch that i am currently in 
+```
+git merge <external_branch_name>
+``` 
 
