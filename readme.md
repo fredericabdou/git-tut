@@ -36,13 +36,21 @@ Check the status of your repo (git status)
 ``` 
 git add .
 ```
-3. You can unstage a file
+3. You can delete a file from staging 
 ```
 git rm --cached <fileName>
 ```
 Or you can unstage all files recursively
 ```
 git rm --cached -r .
+```
+4. You can completely unstage a file
+``` 
+git reset HEAD <file> 
+```
+Or you can unstage all files recursively
+```
+git reset HEAD .
 ```
 
 ## Committing files 
@@ -55,5 +63,5 @@ git commit -m "revision one"
 git log
 ```
 
-
+dasdasd
 
