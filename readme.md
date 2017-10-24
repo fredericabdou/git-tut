@@ -129,9 +129,20 @@ if you wish in the future to retain your last modified head detached branch, you
 git branch <new-branch-name> <first-hash-value-of-commit>
 ```
 
-4. Switch from branch to branch 
+4. Controlling state with branches 
+
+1. create a new branch
+```
+git branch <branch_name> 
+```
+2. list all the branches
+``` 
+git branch
+```
+3. Switch to a branch
 ``` 
 git checkout <branch-name>
 ```
+hole l recently added lal branch master 
 
-Haida l part manna mawjoude bel alternate branch 
+
