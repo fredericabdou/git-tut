@@ -134,7 +134,4 @@ git branch <new-branch-name> <first-hash-value-of-commit>
 git checkout <branch-name>
 ```
 
-
-
-
-
+Haida l part manna mawjoude bel alternate branch 
