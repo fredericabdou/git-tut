@@ -1,4 +1,11 @@
 # ReadMe file for Learning Git and Github 
+Author: [Frederic Abdou](http://fredericabdou.com)
+
+Learn how to write md files: 
+[link1](https://guides.github.com/features/mastering-markdown/)
+[link2](https://help.github.com/articles/basic-writing-and-formatting-syntax/#quoting-code)
+[link3](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 
 ## Create a repository 
 1. cd to folder that you wish to create as a git repository 
