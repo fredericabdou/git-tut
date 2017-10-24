@@ -102,7 +102,7 @@ git log
 
 
 
-4. Managing your log
+## Managing your log
 1. Check all of your commits in the log.
 ```
 git log
@@ -129,7 +129,7 @@ if you wish in the future to retain your last modified head detached branch, you
 git branch <new-branch-name> <first-hash-value-of-commit>
 ```
 
-4. Controlling state with branches 
+## Controlling state with branches 
 
 1. create a new branch
 ```
@@ -143,10 +143,18 @@ git branch
 ``` 
 git checkout <branch-name>
 ```
-4. Merging branches
+## Merging branches
 
 The following code will merge an external branch to the branch that i am currently in 
 ```
 git merge <external_branch_name>
 ``` 
+## Change name of the branch
+```
+git branch -m <orig_branch_name> <new_branch_name>
+```
 
+## Remove a branch 
+```
+git branch -D <branch_name> 
+```
