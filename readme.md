@@ -5,6 +5,7 @@ Learn how to write md files:
 [link1](https://guides.github.com/features/mastering-markdown/)
 [link2](https://help.github.com/articles/basic-writing-and-formatting-syntax/#quoting-code)
 [link3](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[link4](https://daringfireball.net/projects/markdown/syntax)
 
 
 ## Create a repository 
@@ -158,3 +159,52 @@ git branch -m <orig_branch_name> <new_branch_name>
 ```
 git branch -D <branch_name> 
 ```
+## Github 
+
+1. clone a github repo 
+```
+git clone github-url.git
+```
+
+2. get to a certain branch of the cloned repo: 
+
+First, check all the downloaded branches (the ones in red are not visible. Only the master branch is)
+```
+git branch -a
+```
+
+Then after opting for the desired branch, pull that branch and name it and put inside a folder that you also name
+```
+git checkout -b name-of-branch-to-pullOut origin/new-folder-name-for-branch
+```
+3. Get all the branches at once from the github repo 
+First create a directory for the repo 
+```
+mkdir repo_name
+```
+
+Then cd to that directory. 
+Then make a mirror of that repo. In the next code, the space .git after the url means that we are copying the invisible git folder that keeps track of everything of the project on github:
+``` 
+git clone --mirror github-url.git .git
+```
+Then, we should switch that bare repo that we just created to a regular repo. So we should the following command still inside our created repo folder 
+```
+git config --bool core.bare false
+```
+
+Then finally, we should do a hard reset that grabs everything inside that folder and create all the branches and make it look like a normal repository. 
+
+``` 
+git reset --hard 
+```
+
+4. Download directly a desired branch from a github repo 
+```
+git clone -b branch_name repo_url.git
+```
+If we basically dont want the downloaded project as a github repo, we can simply delete the .git folder
+```
+rm -dfr .git
+```
+
