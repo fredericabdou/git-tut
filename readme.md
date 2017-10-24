@@ -46,12 +46,14 @@ git rm --cached -r .
 ```
 
 ## Committing files 
-1. Commit all staged files. The -m is used to add a description to your commit 
+1. Commit all staged files. The -m is used to add a comment to your commit. Whe can get back to this commit point in time later on. 
 ```
 git commit -m "revision one" 
 ```
-
-
+2. Check your commits log. 
+```
+git log
+```
 
 
 
