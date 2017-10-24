@@ -40,6 +40,11 @@ Check the status of your repo (git status)
 ``` 
 git add .
 ```
+or
+```
+git add --all
+```
+
 3. You can delete a file from staging 
 ```
 git rm --cached <fileName>
@@ -70,7 +75,31 @@ git log
 ## Deletig files
 
 1. Run git status and make sure that everything is clean
-2. Method 1: you can manually delete files from your desktop or server environment.
+2. Method 1: 
+
+    2.1. Manually delete the file
+
+    2.2. You can checkout the file to revert it back 
+
+    2.3. Alternatively you can add the deleted file into the staging environment (git add). You can undo the staging with git reset HEAD
+
+    2.4. Finally you can commit your staging 
+
+3. Method 2:
+
+    3.1. You can directly delete the file and move it directly to staging by using the following command: (we are combining here the manual deletion and the manual adding to stage environment)
+    ```
+    git rm <file> 
+    ```
+    Alternatively you can delete all files in the folder with: 
+    ```
+    git rm .
+    ```
+    
+    3.2. You can undo the staging with git reset HEAD. You can checkout the file to revert it back. 
+   
+    3.3. Finally you can commit your staging 
+
 
 
 
