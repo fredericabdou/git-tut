@@ -103,14 +103,37 @@ git log
 
 
 4. Managing your log
-1. 
+1. Check all of your commits in the log.
 ```
 git log
 ```
-2. 
+2. You can go to a desired commit in time. Notice if you go to a previous commit, you will enter a detached head state, which is by default a branch created by git. In this state you will only see commits up to your selected commit. You can do experimental changes and mess around with your project etc., and then you can go back to your original set of commits without messing with anything else. Think of it as an alternate reality that starts at the commit that you checkout. 
 ```
-git checkout <commit hash value>
+git checkout <commit-hash-value>
 ```
+you can see that now you have the master branch and the head detached branch 
+```
+git branch
+```
+
+3. You can retain what you're doing in the death head state area as another branch, after modifying it and playing around
+```
+git checkout -b <new-branch-name>
+```
+Alternatively you can ignore all of the changes and switch back to the master branch
+```
+git checkout master 
+```
+if you wish in the future to retain your last modified head detached branch, you can save the first part of your hash commit, and then create another branch refering to the head detached branch
+```
+git branch <new-branch-name> <first-hash-value-of-commit>
+```
+
+4. Switch from branch to branch 
+``` 
+git checkout <branch-name>
+```
+
 
 
 
