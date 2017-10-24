@@ -102,4 +102,16 @@ git log
 
 
 
+4. Managing your log
+1. 
+```
+git log
+```
+2. 
+```
+git checkout <commit hash value>
+```
+
+
+
 
