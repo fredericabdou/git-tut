@@ -67,6 +67,10 @@ git commit -m "revision one"
 git log
 ```
 
+## Deletig files
+
+1. Run git status and make sure that everything is clean
+2. Method 1: you can manually delete files from your desktop or server environment.
 
 
 
